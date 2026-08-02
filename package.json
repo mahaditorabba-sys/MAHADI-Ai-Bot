@@ -1,7 +1,7 @@
 {
-  "name": "shahadat-chat-bot",
+  "name": "𝐌𝐀𝐇𝐀𝐃𝐈-Ai-Bot",
   "version": "2.0.1",
-  "description": "Made By SHAHADAT SAHU",
+  "description": "Made By MAHADI HASAN RONY",
   "main": "Main.js",
   "engines": {
     "node": "22.x",
@@ -22,12 +22,12 @@
     "shahadatproject",
     "messenger",
     "javascript",
-    "shadat",
-    "ullash",
-    "shahadat sahu",
-    "shahadat chat bot"
+    "Mahadi",
+    "Ai Bot",
+    "Mahadi Hasan Rony",
+    "Mahadi chat bot"
   ],
-  "author": "SHAHADAT SAHU",
+  "author": "𝐌𝐀𝐇𝐀𝐃𝐈 Chat Bot",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shahadat-sahu/SHAHADAT-CHAT-BOT/issues"
