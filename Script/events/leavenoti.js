@@ -21,10 +21,11 @@ module.exports.run = async function({ api, event, Users, Threads }) {
   const name = global.data.userName.get(event.logMessageData.leftParticipantFbId) || await Users.getNameUser(event.logMessageData.leftParticipantFbId);
 
   const type = (event.author == event.logMessageData.leftParticipantFbId)
-    ? " তোর সাহস কম না  গ্রুপের এডমিনের পারমিশন ছাড়া তুই লিভ  নিস😡😠🤬 \n✦─────꯭─⃝‌‌꯭𝐌𝐀𝐇𝐀𝐃𝐈 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭────✦"
-    : "তোমার এই গ্রুপে থাকার কোনো যোগ্যাতা নেই ছাগল😡\nতাই তোমাকে লাথি মেরে গ্রুপ থেকে বের করে দেওয়া হলো🤪 WELLCOME REMOVE🤧\n✦─────SHAHADAT𝐀𝐇𝐀𝐃𝐈 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭────✦";
+    ? " ⚠️ গ্রুপের একজন সদস্য বিদায় নিয়েছেন আশা করি, আবার কোনো একদিন এই পরিবারের অংশ হয়ে ফিরে আসবেন।
+আপনার জন্য রইল আন্তরিক শুভকামনা💙 \n✦─────꯭─⃝‌‌꯭𝐌𝐀𝐇𝐀𝐃𝐈 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭────✦"
+    : "তোমার এই গ্রুপে থাকার কোনো যোগ্যাতা নেই ছাগল😡\nতাই তোমাকে লাথি মেরে গ্রুপ থেকে বের করে দেওয়া হলো🤪 WELLCOME REMOVE🤧\n✦─────𝐌𝐀𝐇𝐀𝐃𝐈 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭────✦";
 
-  const path = join(__dirname, "Shahadat", "leaveGif");
+  const path = join(__dirname, "𝐌𝐀𝐇𝐀𝐃𝐈", "leaveGif");
   const gifPath = join(path, `leave1.gif`);
 
   if (!existsSync(path)) mkdirSync(path, { recursive: true });
