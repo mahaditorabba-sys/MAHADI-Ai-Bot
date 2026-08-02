@@ -9,7 +9,7 @@
 
 <!-- Image -->
 <p align="center">
-  <img src="https://i.imgur.com/u7VnPzH.png" width="300">
+  <img src="" width="300">
 </p>
 
 <!-- COLORED + BOLD TITLE (NO ANIMATION) -->
@@ -158,15 +158,15 @@ ___
 
 ## 👨‍💻 ABOUT THE DEVELOPER
 
-**Name:** `SHAHADAT ISLAM`  
-**Nice Name:** `SA HU`  
+**Name:** `MAHADI HASAN`  
+**Nice Name:** `RONY`  
 **Profession:** `STUDENT & CHATBOT DEVELOPER`  
 **Location:** `KHAGRACHARI, BANGLADESH`
 
 #### 📞 CONTACT
-- **WhatsApp:** [WhatsApp Me](https://wa.me/+8801882333052)
-- **Facebook:** [Profile Me](https://facebook.com/100044713412032)
-- **Messenger:** [Message Me](https://m.me/100044713412032)
+- **WhatsApp:** [WhatsApp Me]()
+- **Facebook:** [Profile Me]()
+- **Messenger:** [)
 
 #### 🚀 APPROACH
 - 💻 Copy-paste techniques with deep customizations  
