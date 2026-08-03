@@ -2,7 +2,7 @@ module.exports.config = {
   name: "adminmention",
   version: "1.0.0",
   hasPermssion: 0,
-  credits: "SHAHADAT SAHU",
+  credits: "MAHADI Ai Bot",
   description: "Bot will reply only when someone directly mentions an admin",
   commandCategory: "Other",
   usages: "@",
@@ -11,36 +11,38 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event }) {
   const adminIDs = [
-    "693990838",
-    "",
-    ""
+    "693990838"
   ].map(String);
 
+  // Admin নিজে মেসেজ দিলে রিপ্লাই করবে না
   if (adminIDs.includes(String(event.senderID))) return;
 
+  // Reply message এ কাজ করবে না
   if (event.type === "message_reply" || event.messageReply) return;
 
+  // কোনো Mention না থাকলে কিছু করবে না
   if (!event.mentions || Object.keys(event.mentions).length === 0) return;
 
   const mentionedIDs = Object.keys(event.mentions).map(String);
 
+  // Admin Mention করা হয়েছে কিনা
   if (!adminIDs.some(id => mentionedIDs.includes(id))) return;
 
   const replies = [
-    "ডাকাডাকি করিস না বস ব্যস্ত আছে 😒😌",
-    "বস এক আবালে আপনাকে মেনশন দিছে 😑😃",
-    "যেভাবে মেনশন দিতাচত মনে হয় তোর গার্লফ্রেন্ডটারে, আমার বসকে দিয়া দিবি 🫥😒",
-    "বস এক পাগল ছাগল, আপনাকে ডাকতেছে 🐸🫵",
-    "বস এক হালায় আপনার নাম ধরছে, আপনি শুধু একবার আদেশ করুন, আজকে হালার নানিরে চমলক্ক করে দিমু 😑🥴",
-    "মেনশন না দিয়া একটা girlfriend খুজে দে 🙃😮💨",
-    "মাইয়া হলে বসের ইনবক্স এ যাও 😗😁",
-    "বস এখন ব্যস্ত আছে, কিছু বলতে হলে ইনবক্স এ গিয়া বল",
-    "বস এখন আমার সাথে মিটিং এ আছে, মেনশন দিস না 🙂",
-    "বস এখন ব্যস্ত আছে, কি বলবি আমাকে বল",
-    "মেনশন না দিয়া বস বল বস 🥵💋",
-    "কিরে তোর এতো সাহস আমার বসের নাম ধরিস 😾🫵",
-    "এতো মেনশন না দিয়া তোর গার্লফ্রেন্ডটারে দিয়া দে 😹🐸",
-    "এইভাবে মেনশন করতাস, না জানি তুই প্রেমে পড়ছোস কিনা 😼❤️"
+    "ডাকাডাকি করিস না, বস ব্যস্ত আছে 😒😌",
+    "বস, একজন আপনাকে মেনশন করেছে 😑😃",
+    "বস এখন ব্যস্ত আছে, পরে আবার মেনশন করো 🙂",
+    "যা বলার আমাকে বল, বস পরে দেখে নেবে 😉",
+    "কিরে! বসকে এত মেনশন দিস কেন? 😾🫵",
+    "বস এখন অফলাইনে আছে 😴",
+    "বস এখন আমার সাথে মিটিংয়ে আছে 😎",
+    "বসকে একটু শান্তিতে থাকতে দে 😌",
+    "এত মেনশন না দিয়ে একটু ধৈর্য ধর ❤️",
+    "বসকে বিরক্ত করিস না, উনি গুরুত্বপূর্ণ কাজে ব্যস্ত 🤍",
+    "বসকে ডাকছিস কেন? কোনো দরকার থাকলে ইনবক্সে নক দে 📩",
+    "বসকে মেনশন দিয়ে লাভ নেই, উনি পরে সব দেখবেন 😅",
+    "মেনশন কম দে, সম্মান বেশি দে 😎",
+    "বসের নাম এত ডাকিস না, কাজে মন দে 😁"
   ];
 
   return api.sendMessage(
