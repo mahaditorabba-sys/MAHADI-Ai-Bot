@@ -32,7 +32,7 @@ module.exports.languages = {
 ┣━━━━━━━━━━━━━━━━┫
 ┃ ⚙ Prefix: %8
 ┃ 🤖 Bot Name: %9
-┃ 👑 Owner: 𝐌𝐀𝐇𝐀𝐃𝐈
+┃ 👑 Owner: 𝐌𝐀𝐇𝐀𝐃𝐈  𝐂𝐡𝐚𝐭 𝐁𝐨𝐭
 ╰━━━━━━━━━━━━━━━━╯`,
         "helpList": "[ There are %1 commands. Use: \"%2help commandName\" to view more. ]",
         "user": "User",
@@ -43,10 +43,10 @@ module.exports.languages = {
 
 // 🔹 এখানে আপনার ফটো Imgur লিংক করে বসাবেন ✅
 const helpImages = [
-    "",
-    "",
-    "",
-    ""
+    "https://i.postimg.cc/Z9JwjYX9/file-00000000eb0c820a9d2bb0b3ba1d0bba.png",
+    "https://i.postimg.cc/4KFptJGR/file-00000000566081f4ba743a077d3e9bb0.png",
+    "https://i.postimg.cc/7GG0npHF/file-00000000c5e481f4abd1fb16a25303b1.png",
+    "https://i.postimg.cc/G88GxZLN/file-00000000f81081f4b070c075047e4a02.png"
 ];
 
 
@@ -80,7 +80,7 @@ module.exports.handleEvent = function ({ api, event, getText }) {
         command.config.commandCategory || "Unknown",  
         command.config.cooldowns || 0,  
         prefix,  
-        global.config.BOTNAME || "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
+        global.config.BOTNAME || "𝐌𝐀𝐇𝐀𝐃𝐈  𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"  
     );  
 
     downloadImages(files => {  
@@ -143,8 +143,8 @@ module.exports.run = function ({ api, event, args, getText }) {
 ${msg}
 ┣━━━━━━━━━━━━━━━━┫
 ┃ ⚙ Prefix: ${prefix}
-┃ 🤖 Bot Name: ${global.config.BOTNAME || "𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"}
-┃ 👑 Owner: 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔
+┃ 🤖 Bot Name: ${global.config.BOTNAME || "𝐌𝐀𝐇𝐀𝐃𝐈 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭"}
+┃ 👑 Owner: 𝐌𝐀𝐇𝐀𝐃𝐈 𝐇𝐀𝐒𝐀𝐍 𝐑𝐎𝐍𝐘
 ╰━━━━━━━━━━━━━━━━╯`;
 
     downloadImages(files => {  
