@@ -1,5 +1,5 @@
 {
-  "Author": "MAHADI AI BOT",
+  "Author": "SHAHADAT SAHU",
   "version": "2.0.1",
   "language": "en",
   "DeveloperMode": false,
@@ -10,15 +10,14 @@
   "EMAIL": "your_email",
   "PASSWORD": "your_password",
   "OTPKEY": "",
-  "BOTNAME": "─꯭─⃝‌‌𝐌𝐀𝐇𝐀𝐃𝐈 𝐀𝐈 𝐁𝐎𝐓",
+  "BOTNAME": "─꯭─⃝‌‌Mahadi 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭",
   "PREFIX": "/",
-  "reactUnsend": [
-    "😡",
-    "🤧",
-    "😤",
-    "😠"
-  ],
+
+  "reactUnsend": ["😡", "🤧", "😤", "😠"],
+
   "ADMINBOT": [
+    "693990838",
+    "693990838",
     "693990838"
   ],
   "NDH": [
@@ -27,14 +26,18 @@
   "adminOnly": false,
   "ndhOnly": false,
   "adminPaOnly": false,
+
   "APPSTATEPATH": "appstate.json",
+
   "DATABASE": {
     "sqlite": {
       "storage": "data.sqlite"
     }
   },
+
   "commandDisabled": [],
   "eventDisabled": [],
+
   "System": {
     "autoRestart": true,
     "restartInterval": 86400,
@@ -42,6 +45,7 @@
     "saveCrashLogs": true,
     "maxMemoryLimit": "1024mb"
   },
+
   "AntiAbuse": {
     "blockSpam": true,
     "spamThreshold": 5,
@@ -50,6 +54,7 @@
     "protectBot": true,
     "notifyAdminOnAbuse": true
   },
+
   "FCAOption": {
     "selfListen": false,
     "listenEvents": true,
@@ -64,6 +69,7 @@
     "emitReady": false,
     "userAgent": "Mozilla/5.0"
   },
+
   "Modules": {
     "daily": {
       "cooldownTime": 43200000,
@@ -104,6 +110,28 @@
     },
     "loto": {
       "maxPlayers": 10,
+      "getDelay": 8
+    }
+  },
+
+  "APIKEYS": {
+    "TENOR": "...",
+    "INSTAGRAM": "...",
+    "YOUTUBE_MAIN": "..."
+  },
+
+  "Security": {
+    "caesar": {
+      "caeserPassword": "123456"
+    },
+    "log": {
+      "enable": true
+    },
+    "god": {
+      "enable": true
+    }
+  }
+}      "maxPlayers": 10,
       "getDelay": 8
     }
   },
