@@ -1,5 +1,5 @@
 {
-  "Author": "𝑴𝑨𝑯𝑨𝑫𝑰 𝑨𝒊 𝑩𝒐𝒕 ✨",
+  "Author": "MAHADI AI BOT",
   "version": "2.0.1",
   "language": "en",
   "DeveloperMode": false,
@@ -7,18 +7,19 @@
   "autoClean": true,
   "notiGroup": true,
   "NOTIFICATION": true,
-  "EMAIL": "mahadihasanrony591@gmail.com",
+  "EMAIL": "your_email",
   "PASSWORD": "your_password",
   "OTPKEY": "",
-  "BOTNAME": "꯭─⃝‌‌𝐌𝐀𝐇𝐀𝐃𝐈 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭",
+  "BOTNAME": "─꯭─⃝‌‌𝐌𝐀𝐇𝐀𝐃𝐈 𝐀𝐈 𝐁𝐎𝐓",
   "PREFIX": "/",
-
-  "reactUnsend": ["😡", "🤧", "😤", "😠"],
-
+  "reactUnsend": [
+    "😡",
+    "🤧",
+    "😤",
+    "😠"
+  ],
   "ADMINBOT": [
-    "693990838",
-    "",
-    ""
+    "693990838"
   ],
   "NDH": [
     "693990838"
@@ -26,18 +27,14 @@
   "adminOnly": false,
   "ndhOnly": false,
   "adminPaOnly": false,
-
   "APPSTATEPATH": "appstate.json",
-
   "DATABASE": {
     "sqlite": {
       "storage": "data.sqlite"
     }
   },
-
   "commandDisabled": [],
   "eventDisabled": [],
-
   "System": {
     "autoRestart": true,
     "restartInterval": 86400,
@@ -45,7 +42,6 @@
     "saveCrashLogs": true,
     "maxMemoryLimit": "1024mb"
   },
-
   "AntiAbuse": {
     "blockSpam": true,
     "spamThreshold": 5,
@@ -54,7 +50,6 @@
     "protectBot": true,
     "notifyAdminOnAbuse": true
   },
-
   "FCAOption": {
     "selfListen": false,
     "listenEvents": true,
@@ -69,7 +64,6 @@
     "emitReady": false,
     "userAgent": "Mozilla/5.0"
   },
-
   "Modules": {
     "daily": {
       "cooldownTime": 43200000,
@@ -104,6 +98,32 @@
     },
     "xidach": {
       "maxPlayers": 5,
+      "normalWinBonus": 1,
+      "superWinBonus": 2,
+      "epicWinBonus": 4
+    },
+    "loto": {
+      "maxPlayers": 10,
+      "getDelay": 8
+    }
+  },
+  "APIKEYS": {
+    "TENOR": "...",
+    "INSTAGRAM": "...",
+    "YOUTUBE_MAIN": "..."
+  },
+  "Security": {
+    "caesar": {
+      "caeserPassword": "123456"
+    },
+    "log": {
+      "enable": true
+    },
+    "god": {
+      "enable": true
+    }
+  }
+}      "maxPlayers": 5,
       "normalWinBonus": 1,
       "superWinBonus": 2,
       "epicWinBonus": 4
